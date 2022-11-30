@@ -1,26 +1,37 @@
 body {
     background-color: rgb(45, 43, 43);
     color: aliceblue;
+    margin: 0;
 }
 #navbar {
     position: fixed;
     height:100%;
     min-width: 290px;
     border-right: 2px solid aliceblue;
+    
 }
-#main-doc {
-    margin-left: 310px;
-}
-ul {
+#navbar ul {
     list-style: none;
     padding-left: 0;
 }
 
-li {
+#navbar ul li {
     border-bottom: 1px solid aliceblue;
+} 
+#main-doc {
+    margin-left: 310px;
 }
-
+#main-doc header{
+    font-size: x-large;
+    font-weight: bold;
+}
+h2 {
+    font-size: large;
+}
 a {
     text-decoration: none;
     color:aliceblue;
+}
+article {
+    margin-left: 15px;
 }

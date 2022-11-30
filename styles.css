@@ -1,3 +1,26 @@
 body {
     background-color: rgb(45, 43, 43);
+    color: aliceblue;
+}
+#navbar {
+    position: fixed;
+    height:100%;
+    min-width: 290px;
+    border-right: 2px solid aliceblue;
+}
+#main-doc {
+    margin-left: 310px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    border-bottom: 1px solid aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color:aliceblue;
 }

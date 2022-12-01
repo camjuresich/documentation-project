@@ -8,15 +8,25 @@
     <title>Recipe List</title>
 </head>
 <body>
-    <nav id="navbar">
-        <header>Family Recipes</header>
-        <ul>
-            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
-            <li><a href="#Forgotten_Roast" class="nav-link">Forgotten Roast</a></li>
-            <li><a href="#Cheesy_Potato_Soup" class="nav-link">Cheesy Potato Soup</a></li>
-            <li><a href="#Spicy_potato_Soup" class="nav-link">Spicy Potato Soup</a></li>
-            <li><a href="#White_Chicken_Chili" class="nav-link">White Chicken Chili</a></li>
-        </ul>
+        <nav id="navbar">
+            <header>Family Recipes</header>
+            <div id="hamburger" onclick="unhide()">
+                <div></div><div></div><div></div>
+            </div>
+            <script>
+                function unhide() {
+                    document.getElementById('hideybox').style.display = 'block';
+                }
+            </script>
+            <ul id="hideybox">
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#Forgotten_Roast" class="nav-link">Forgotten Roast</a></li>
+                <li><a href="#Cheesy_Potato_Soup" class="nav-link">Cheesy Potato Soup</a></li>
+                <li><a href="#Spicy_potato_Soup" class="nav-link">Spicy Potato Soup</a></li>
+                <li><a href="#White_Chicken_Chili" class="nav-link">White Chicken Chili</a></li>
+                <li><a href="#Crockpot_Teriyaki_Chicken" class="nav-link">Crockpot Teriyaki Chicken</a></li>
+                <li><a href="#Closing_Remarks" class="nav-link">Closing Remarks</a></li>
+            </ul>      
     </nav>
     <main id="main-doc">
 <!-- The .main-section elements should contain at least ten p elements total (not each) -->
@@ -148,6 +158,45 @@
                     <li>&#8212; can also be made all day in a crock pot</li>
                 </ul>
             </code>
+        </section>
+        <section class="main-section" id="Crockpot_Teriyaki_Chicken">
+            <header>Crockpot Teriyaki Chicken</header>
+            <p>If you're feeling lazy and want some teriyaki come on down to crockpot town!
+               I like to make this when I'm feeling like I'm getting tired of what I'm cooking
+               or I want to focus on making good sides.  
+            </p>
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1 Package Chicken thighs</li>
+                <li>1/2 cup soy sauce</li>
+                <li>5 Tbsp sugar</li>
+                <li>3 Tbsp sesame oil</li>
+                <li>1 tsp garlic (crank it if you want to)</li>
+                <li>1 tsp ginger(be careful)</li>
+            </ul>
+            <h2>Putting it all together</h2>
+            <code class="recipe">
+                <ul>
+                    <li>&#8212; Mix soy sauce, sugar, sesame oil, garlic, and ginger in a bowl</li>
+                    <li>&#8212; Unpackage your chicken and clean it</li>
+                    <li>&#8212; Throw your chicken in the crockpot</li>
+                    <li>&#8212; dump the sauce on it </li>
+                    <li>&#8212; cook on low all day</li>
+                    <li>&#8212; serve with rice</li>
+                </ul>
+            </code>
+        </section>
+        <section class="main-section" id="Closing_Remarks">
+            <header>Closing Remarks</header>
+            <p>I think cooking is an expession of who we are. If you think I'm a lazy person...
+               well maybe I am but I still eat good food form time to time. It may not be Gordon
+               Ramsy quality but I'm not rich and I'm not going to invest that much time into
+               something I'm not super passionate about. Cooking is cool because it's something
+               that can grow with you. My favorite recipes today may not be the same tomorrow. 
+               Or maybe I'll improve these recipes so much from what they are now that they hardly
+               are recognizable tomorrow. 
+            </p>
+            <p>Keep cooking my friends.</p>
         </section>
     </main>
 </body>

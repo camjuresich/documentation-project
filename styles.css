@@ -5,6 +5,8 @@ body {
     line-height: 1.5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
 #navbar {
     position: fixed;
     height:100%;
@@ -54,4 +56,48 @@ a {
 }
 article {
     margin-left: 15px;
+}
+
+@media (max-width: 800px) {
+    
+    #navbar {
+        position: fixed;
+        height: 50px;
+        min-width: 100%;
+        background-color: black;
+    }
+    #hideybox {
+        padding-left: 0;
+        width: 38%;
+        margin-bottom: 0;
+        border-right: 2px solid aliceblue;
+        background-color: black;
+        display: none;
+    }
+
+    #navbar ul li {
+        border-bottom: 1px solid aliceblue;
+        padding: 10px 60px;
+    } 
+    
+    #main-doc {
+        margin-left: 0;
+        padding-top: 80px;
+    }
+    #hamburger {
+        height: 45px;
+        width: 40px;
+        margin: 0px 0 0 0;
+        position: absolute;
+        padding: 0;
+    }
+    #hamburger div{ 
+        width: 35px;
+        height: 5px;
+        background-color: aliceblue;
+        margin: -14px 0 0 10px;
+        border-radius: 5px;
+        position: relative;
+    }
+    
 }

@@ -11,14 +11,16 @@
         <nav id="navbar">
             <header>Family Recipes</header>
             <div id="hamburger" onclick="unhide()">
-                <div></div><div></div><div></div>
+                
+                    <div></div><div></div><div></div>
+                
             </div>
             <script>
                 function unhide() {
-                    document.getElementById('hideybox').style.display = 'block';
+                    document.getElementById('hideybox').classList.toggle('hidden')
                 }
             </script>
-            <ul id="hideybox">
+            <ul id="hideybox" class="hidden">
                 <li><a href="#Introduction" class="nav-link">Introduction</a></li>
                 <li><a href="#Forgotten_Roast" class="nav-link">Forgotten Roast</a></li>
                 <li><a href="#Cheesy_Potato_Soup" class="nav-link">Cheesy Potato Soup</a></li>
